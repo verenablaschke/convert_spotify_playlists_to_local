@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 # As downloaded from the Spotify GDPR export
-spotify_playlist_json = "./Playlist1.json.json"
+spotify_playlist_json = "Spotify Account Data/Playlist1.json.json"
 
 out_dir = "./playlists_spotify"
 
