@@ -11,7 +11,7 @@ folder_logs = "./playlists_logs"
 # Output of local_music_overview.py
 local_music_overview = "./music_overview.tsv"
 # How many matched(!) songs should a playlist
-# contain in order to be converted? (can be 0)
+# contain in order to be converted? (Can be 0)
 min_length = 10
 
 
@@ -46,6 +46,7 @@ def normalize_title_fuzzy(title):
     title = re.sub("\[with .*\]", "", title)
     title = re.sub("\(feat.*\)", "", title)
     title = re.sub("\[feat.*\]", "", title)
+    title = re.sub(" [a-z]+ version", "", title)
     return title.strip()
 
 
